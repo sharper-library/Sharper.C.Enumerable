@@ -18,13 +18,13 @@ public static class EnumerableModule
     =>
         e.Reverse().Aggregate(x, (b, a) => f(a, b));
 
-    public static B LazyFoldRight<A, B>
+    public static Trampoline<B> LazyFoldRight<A, B>
       ( this IEnumerable<A> e
       , B x
       , Func<A, Trampoline<B>, Trampoline<B>> f
       )
     =>
-        LazyFoldRight(e.GetEnumerator(), x, f).Eval();
+        LazyFoldRight(e.GetEnumerator(), x, f);
 
     private static Trampoline<B> LazyFoldRight<A, B>
       ( IEnumerator<A> e
