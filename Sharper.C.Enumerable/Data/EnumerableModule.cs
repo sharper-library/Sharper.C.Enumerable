@@ -69,6 +69,14 @@ public static class EnumerableModule
     =>
         xs.SelectMany(Id);
 
+    public static Func<IEnumerable<A>, B> FoldMap<A, B>
+      ( Func<A, B> map
+      , Func<B, B, B> sum
+      , B zero
+      )
+    =>
+        xs => xs.Aggregate(zero, (b, a) => sum(b, map(a)));
+
     public static Func<B, Func<IEnumerable<A>, B>>FoldLeft<A, B>
       ( Func<B, A, B> f
       )
