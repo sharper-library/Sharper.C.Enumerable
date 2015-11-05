@@ -3,6 +3,19 @@
   "version": 1,
   "targets": {
     ".NETPlatform,Version=v5.0": {
+      "Sharper.C.Function/0.1.0-build-00001": {
+        "type": "package",
+        "dependencies": {
+          "Sharper.C.Unit": "0.1.0-build-00004",
+          "System.Runtime": "4.0.20"
+        },
+        "compile": {
+          "lib/dotnet/Sharper.C.Function.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/Sharper.C.Function.dll": {}
+        }
+      },
       "Sharper.C.Trampoline/0.1.0-build-00003": {
         "type": "package",
         "dependencies": {
@@ -13,6 +26,18 @@
         },
         "runtime": {
           "lib/dotnet/Sharper.C.Trampoline.dll": {}
+        }
+      },
+      "Sharper.C.Unit/0.1.0-build-00004": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.0.20"
+        },
+        "compile": {
+          "lib/dotnet/Sharper.C.Unit.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/Sharper.C.Unit.dll": {}
         }
       },
       "System.Collections/4.0.10": {
@@ -135,6 +160,24 @@
       }
     },
     "DNX,Version=v4.5.1": {
+      "Sharper.C.Function/0.1.0-build-00001": {
+        "type": "package",
+        "dependencies": {
+          "Sharper.C.Unit": "0.1.0-build-00004"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Sharper.C.Function.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Sharper.C.Function.dll": {}
+        }
+      },
       "Sharper.C.Trampoline/0.1.0-build-00003": {
         "type": "package",
         "frameworkAssemblies": [
@@ -149,9 +192,42 @@
         "runtime": {
           "lib/dnx451/Sharper.C.Trampoline.dll": {}
         }
+      },
+      "Sharper.C.Unit/0.1.0-build-00004": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Sharper.C.Unit.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Sharper.C.Unit.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.5.1": {
+      "Sharper.C.Function/0.1.0-build-00001": {
+        "type": "package",
+        "dependencies": {
+          "Sharper.C.Unit": "0.1.0-build-00004"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Sharper.C.Function.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Sharper.C.Function.dll": {}
+        }
+      },
       "Sharper.C.Trampoline/0.1.0-build-00003": {
         "type": "package",
         "frameworkAssemblies": [
@@ -165,11 +241,41 @@
         },
         "runtime": {
           "lib/net451/Sharper.C.Trampoline.dll": {}
+        }
+      },
+      "Sharper.C.Unit/0.1.0-build-00004": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Sharper.C.Unit.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Sharper.C.Unit.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "Sharper.C.Function/0.1.0-build-00001": {
+      "type": "package",
+      "sha512": "iM0M9rmfikocHk1xlmbbtA9BtcMQ8tn30ubLASa14DVCbQ6XX0Nqxdcn4jqzlrnUqacHx1z9nHjoh7ypLvnr2Q==",
+      "files": [
+        "lib/dnx451/Sharper.C.Function.dll",
+        "lib/dnx451/Sharper.C.Function.xml",
+        "lib/dotnet/Sharper.C.Function.dll",
+        "lib/dotnet/Sharper.C.Function.xml",
+        "lib/net451/Sharper.C.Function.dll",
+        "lib/net451/Sharper.C.Function.xml",
+        "Sharper.C.Function.0.1.0-build-00001.nupkg",
+        "Sharper.C.Function.0.1.0-build-00001.nupkg.sha512",
+        "Sharper.C.Function.nuspec"
+      ]
+    },
     "Sharper.C.Trampoline/0.1.0-build-00003": {
       "type": "package",
       "sha512": "+uZD7JtUDtRrlG7qfzHKGl6Rgt3rGBKh8IEppzzgapZA6TtQWWblLZ/4a522o64yCTEbEvOL7Drx/PC+6pY90w==",
@@ -183,6 +289,21 @@
         "Sharper.C.Trampoline.0.1.0-build-00003.nupkg",
         "Sharper.C.Trampoline.0.1.0-build-00003.nupkg.sha512",
         "Sharper.C.Trampoline.nuspec"
+      ]
+    },
+    "Sharper.C.Unit/0.1.0-build-00004": {
+      "type": "package",
+      "sha512": "0GVcJVe6Ml/HiDs6H9EW4qJ2CHmxkWKZpM84ZtP/4f7sCJQLCxQJzal+moQcszIUaHxjWC7TTcsdzDDcjPaPVw==",
+      "files": [
+        "lib/dnx451/Sharper.C.Unit.dll",
+        "lib/dnx451/Sharper.C.Unit.xml",
+        "lib/dotnet/Sharper.C.Unit.dll",
+        "lib/dotnet/Sharper.C.Unit.xml",
+        "lib/net451/Sharper.C.Unit.dll",
+        "lib/net451/Sharper.C.Unit.xml",
+        "Sharper.C.Unit.0.1.0-build-00004.nupkg",
+        "Sharper.C.Unit.0.1.0-build-00004.nupkg.sha512",
+        "Sharper.C.Unit.nuspec"
       ]
     },
     "System.Collections/4.0.10": {
@@ -665,6 +786,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Sharper.C.Function >= 0.1.0-*",
       "Sharper.C.Trampoline >= 0.1.0-*"
     ],
     ".NETPlatform,Version=v5.0": [
