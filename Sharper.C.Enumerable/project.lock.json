@@ -3,7 +3,7 @@
   "version": 1,
   "targets": {
     ".NETPlatform,Version=v5.0": {
-      "Sharper.C.Function/0.1.0-build-00001": {
+      "Sharper.C.Function/0.1.0-build-00002": {
         "type": "package",
         "dependencies": {
           "Sharper.C.Unit": "0.1.0-build-00004",
@@ -16,9 +16,11 @@
           "lib/dotnet/Sharper.C.Function.dll": {}
         }
       },
-      "Sharper.C.Trampoline/0.1.0-build-00003": {
+      "Sharper.C.Trampoline/0.1.0-build-00008": {
         "type": "package",
         "dependencies": {
+          "System.Console": "4.0.0-beta-23409",
+          "System.Linq": "4.0.0",
           "System.Runtime": "4.0.20"
         },
         "compile": {
@@ -47,6 +49,16 @@
         },
         "compile": {
           "ref/dotnet/System.Collections.dll": {}
+        }
+      },
+      "System.Console/4.0.0-beta-23409": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0",
+          "System.Runtime": "4.0.0"
+        },
+        "compile": {
+          "ref/dotnet/System.Console.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.0.10": {
@@ -160,7 +172,7 @@
       }
     },
     "DNX,Version=v4.5.1": {
-      "Sharper.C.Function/0.1.0-build-00001": {
+      "Sharper.C.Function/0.1.0-build-00002": {
         "type": "package",
         "dependencies": {
           "Sharper.C.Unit": "0.1.0-build-00004"
@@ -178,7 +190,7 @@
           "lib/dnx451/Sharper.C.Function.dll": {}
         }
       },
-      "Sharper.C.Trampoline/0.1.0-build-00003": {
+      "Sharper.C.Trampoline/0.1.0-build-00008": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -210,7 +222,7 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
-      "Sharper.C.Function/0.1.0-build-00001": {
+      "Sharper.C.Function/0.1.0-build-00002": {
         "type": "package",
         "dependencies": {
           "Sharper.C.Unit": "0.1.0-build-00004"
@@ -228,7 +240,7 @@
           "lib/net451/Sharper.C.Function.dll": {}
         }
       },
-      "Sharper.C.Trampoline/0.1.0-build-00003": {
+      "Sharper.C.Trampoline/0.1.0-build-00008": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -261,9 +273,9 @@
     }
   },
   "libraries": {
-    "Sharper.C.Function/0.1.0-build-00001": {
+    "Sharper.C.Function/0.1.0-build-00002": {
       "type": "package",
-      "sha512": "iM0M9rmfikocHk1xlmbbtA9BtcMQ8tn30ubLASa14DVCbQ6XX0Nqxdcn4jqzlrnUqacHx1z9nHjoh7ypLvnr2Q==",
+      "sha512": "lqZzqYkvNCbH5QLpo18HO1I20AJ7+0jGdwyY2E97n2WnP+LUzQCfM+DEWTgpd3yXBnW11bmyJYcUcpjLBxXoyw==",
       "files": [
         "lib/dnx451/Sharper.C.Function.dll",
         "lib/dnx451/Sharper.C.Function.xml",
@@ -271,14 +283,14 @@
         "lib/dotnet/Sharper.C.Function.xml",
         "lib/net451/Sharper.C.Function.dll",
         "lib/net451/Sharper.C.Function.xml",
-        "Sharper.C.Function.0.1.0-build-00001.nupkg",
-        "Sharper.C.Function.0.1.0-build-00001.nupkg.sha512",
+        "Sharper.C.Function.0.1.0-build-00002.nupkg",
+        "Sharper.C.Function.0.1.0-build-00002.nupkg.sha512",
         "Sharper.C.Function.nuspec"
       ]
     },
-    "Sharper.C.Trampoline/0.1.0-build-00003": {
+    "Sharper.C.Trampoline/0.1.0-build-00008": {
       "type": "package",
-      "sha512": "+uZD7JtUDtRrlG7qfzHKGl6Rgt3rGBKh8IEppzzgapZA6TtQWWblLZ/4a522o64yCTEbEvOL7Drx/PC+6pY90w==",
+      "sha512": "ze3B5bp4X7yXZYERZuCxrLFy8NLrw6hFFhU3AZBsmuqqWPqQjC0lj2XimOFtatMa0cvcfgIwX7m9Hy5LjTNBWw==",
       "files": [
         "lib/dnx451/Sharper.C.Trampoline.dll",
         "lib/dnx451/Sharper.C.Trampoline.xml",
@@ -286,8 +298,8 @@
         "lib/dotnet/Sharper.C.Trampoline.xml",
         "lib/net451/Sharper.C.Trampoline.dll",
         "lib/net451/Sharper.C.Trampoline.xml",
-        "Sharper.C.Trampoline.0.1.0-build-00003.nupkg",
-        "Sharper.C.Trampoline.0.1.0-build-00003.nupkg.sha512",
+        "Sharper.C.Trampoline.0.1.0-build-00008.nupkg",
+        "Sharper.C.Trampoline.0.1.0-build-00008.nupkg.sha512",
         "Sharper.C.Trampoline.nuspec"
       ]
     },
@@ -338,6 +350,28 @@
         "System.Collections.4.0.10.nupkg",
         "System.Collections.4.0.10.nupkg.sha512",
         "System.Collections.nuspec"
+      ]
+    },
+    "System.Console/4.0.0-beta-23409": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "vVstiHq9NKm6jfqm2OQGYgEinU4Zrwbcjtfxq61v0xHXVhx8p3igw9XQCdCOILf1ZWsZtKcvdbcazNP7tL+u+g==",
+      "files": [
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Console.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet/System.Console.dll",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Console.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "runtime.json",
+        "System.Console.4.0.0-beta-23409.nupkg",
+        "System.Console.4.0.0-beta-23409.nupkg.sha512",
+        "System.Console.nuspec"
       ]
     },
     "System.Diagnostics.Debug/4.0.10": {
